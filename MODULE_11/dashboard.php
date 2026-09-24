@@ -1,4 +1,22 @@
-<?php include("header.php")?>
+<?php 
+include("header.php");
+include("config.php");
+$sql='SELECT * from user_login';
+$users=$conn->prepare($sql);
+$users->execute();
+$userData=$users->fetchAll();
+
+?>
+
+<style>
+    table{
+        border: 1px solid black;
+    }
+    tr,td,th{
+        border: 1px solid black;
+    }
+    table,tr,<td></td>boder-collapse: collapse;
+    
 
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Welcome </a>
@@ -32,8 +50,32 @@ Edit Profile
     
 
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"></main>
+  <div class=d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom>
+    <h1 class="h2"> Dashboard </h1>
 
-
+</div>
+<div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Action</th>
+</tr>
+    </thead>
+    <?php
+    foreach($userData){
+    ?>
+    <tbody>
+        <tr>
+            <>td
+<?=  $user['name'] ?></td>
+<?=  $user['surname'] ?></td>
+<?=  $user['username'] ?></td>
+<?=  $user['email'] ?></td>
+<td>Delete | Edit <>
 
 </div>
 </div>

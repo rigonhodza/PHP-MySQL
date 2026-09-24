@@ -12,7 +12,7 @@ try{
 
 
 }catch(Exception $error){
-    echo $error;
+    echo "Error:".$error->getMessage();
     
 }
 
