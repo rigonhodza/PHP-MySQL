@@ -5,17 +5,7 @@
         
     <form class="form-signin" action="register.php" method="post">
         
-        <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
-
-
-        <label for="inputEmail" class="sr-only">Name</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Name" name="name" required autofocus>
-
-
-        <label for="inputEmail" class="sr-only">Surname</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Surname" name="surname" required autofocus>
-
-
+        <h1 cl
         <label for="inputEmail" class="sr-only">Username</label>
         <input type="text" id="inputEmail" class="form-control" placeholder="Username" name="username" required autofocus>
 
@@ -28,6 +18,16 @@
 
 
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
+
+ass="h3 mb-3 font-weight-normal">Please sign up</h1>
+
+
+        <label for="inputEmail" class="sr-only">Name</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Name" name="name" required autofocus>
+
+
+        <label for="inputEmail" class="sr-only">Surname</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Surname" name="surname" required autofocus>
 
 
         <small>Already have account? <a href="login.php">Log In</a></small>
